@@ -17,6 +17,7 @@ const axios_1 = __importDefault(require("axios"));
 require("dotenv").config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 5000;
+console.log(process.env.HOST_URL);
 app.use(require("cors")({
     origin: process.env.HOST_URL,
     methods: ["GET", "POST"],
