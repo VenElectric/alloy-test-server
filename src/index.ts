@@ -6,6 +6,7 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
+console.log(process.env.HOST_URL)
 app.use(
   require("cors")({
     origin: process.env.HOST_URL,
